@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chat_messages",
+  "info": {
+    "singularName": "chat-message",
+    "pluralName": "chat-messages",
+    "displayName": "Chat-message",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "message": {
+      "type": "string",
+      "required": true
+    },
+    "sender": {
+      "type": "integer",
+      "required": true
+    },
+    "isFromServer": {
+      "type": "boolean",
+      "default": false
+    },
+    "receiver": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}
