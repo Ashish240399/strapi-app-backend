@@ -23,7 +23,7 @@ module.exports = {
 
     const io = new Server(strapi.server.httpServer, {
       cors: {
-        origin: "http://localhost:3000",
+        origin: "https://strapi-app-frontend.vercel.app",
         methods: ["GET", "POST"],
         allowedHeaders: ["Authorization", "Content-Type"],
         credentials: true,
@@ -39,7 +39,7 @@ module.exports = {
         // Save the original message to the database
         try {
           const response = await axios.post(
-            "http://localhost:1337/api/chat-messages",
+            "https://stable-apparel-284362d0ca.strapiapp.com/api/chat-messages",
             {
               data: {
                 message: data.message,

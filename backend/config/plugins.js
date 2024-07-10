@@ -6,7 +6,10 @@ module.exports = () => ({
       contentTypes: ["api::article.article"],
       socket: {
         serverOptions: {
-          cors: { origin: "http://localhost:3000", methods: ["GET", "POST"] },
+          cors: {
+            origin: "https://strapi-app-frontend.vercel.app",
+            methods: ["GET", "POST"],
+          },
         },
       },
     },
